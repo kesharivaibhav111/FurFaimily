@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurFaimily</title>
+    <link rel="icon" href="../Img/Img/Gemini_Generated_Image_2vj2pb2vj2pb2vj2 (1).jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/Cat.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-left">
+            <img src="../Img/Img/Gemini_Generated_Image_2vj2pb2vj2pb2vj2 (1).jpeg" alt="FurFaimily Logo" class="nav-logo">
+            <h1>FurFaimily</h1>
+        </div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#" onclick="showAbout()">About</a>
+                <a href="#">Contact</a>
+                <select id="user-type">
+                    <option value="" disabled selected>Select Role</option>
+                    <option value="donor">Donor</option>
+                    <option value="adopter">Adopter</option>
+                </select>
+                <button id="btn-logout">LOGOUT</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card-container">
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/persian.jpeg" alt="persian" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">PERSIAN</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>BEAGLE: Loyal, friendly, and great for families!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/indian.jpeg" alt="indian" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">INDIAN BILLI</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>LABRADOR: Intelligent, loving, and great companions!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Rusty.jpeg" alt="rusty" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">RUSTY_SPOTED_CAT</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>PUG: Adorable, loving, and full of personality!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/bombay.jpeg" alt="bombay" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">BOMBAY</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>RAJAPALAYAM: Brave, loyal, and a great guardian!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/birman.jpeg" alt="birman" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">BIRMAN</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>DALMATIAN: Energetic, playful, and great for active families!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/chartreux.jpeg" alt="chartreux" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">CHARTREUX</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>DOBERMAN: Intelligent, alert, and loyal companions!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 FurFaimily. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function flipCard(card) {
+            card.classList.toggle('flipped');
+        }
+    </script>
+</body>
+</html>
