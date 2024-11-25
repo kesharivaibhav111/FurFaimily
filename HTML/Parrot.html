@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurFaimily</title>
+    <link rel="icon" href="../Img/Img/Gemini_Generated_Image_2vj2pb2vj2pb2vj2 (1).jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/Parrot.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-left">
+            <img src="../Img/Img/Gemini_Generated_Image_2vj2pb2vj2pb2vj2 (1).jpeg" alt="FurFaimily Logo" class="nav-logo">
+            <h1>FurFaimily</h1>
+        </div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#" onclick="showAbout()">About</a>
+                <a href="#">Contact</a>
+                <select id="user-type">
+                    <option value="" disabled selected>Select Role</option>
+                    <option value="donor">Donor</option>
+                    <option value="adopter">Adopter</option>
+                </select>
+                <button id="btn-logout">LOGOUT</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card-container">
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Hyacinth Macaw.jpeg" alt="macaw" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">HYACINTH MACAW</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>HYACINTH MACAW: Colorful, playful, and a great companion!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/African Grey Parrot.jpeg" alt="african" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">AFRICAN GREY PARROT</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>AFRICAN GREY PARROT: Intelligent, social, and known for their ability to mimic human speech!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Umbrella Cockatoo.jpeg" alt="Umbrella" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">UMBRELLA COCKATOO</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>UMBRELLA COCKATOO: Colorful, playful, and a great companion!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Sulphur-crested Cockatoo.jpeg" alt="Sulphur-crested" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">SULPHUR_CRESTED COCKATOO</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>SULPHUR-CRESTED COCKATOO: Playful, affectionate, and a great companion!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Blue-and-gold Macaw.jpeg" alt="Blue-and-gold" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">BLUE-and-GOLD MACAW</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>BLUE-AND-GOLD MACAW: Colorful, intelligent, and a great companion!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Scarlet Macaw.jpeg" alt="Scarlet" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">SCARLET MACAW</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>SCARLET MACAW: Intelligent, social, and a great companion!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 FurFaimily. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function flipCard(card) {
+            card.classList.toggle('flipped');
+        }
+    </script>
+</body>
+</html>
