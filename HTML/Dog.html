@@ -13,7 +13,6 @@
             <img src="../Img/Img/Gemini_Generated_Image_2vj2pb2vj2pb2vj2 (1).jpeg" alt="FurFaimily Logo" class="nav-logo">
             <h1>FurFaimily</h1>
         </div>
-   
         <div class="nav-right">
             <div class="nav-links">
                 <a href="index.html">Home</a>
@@ -28,59 +27,103 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="container">
-        <div class="card-container" style="display: flex; justify-content: space-around;">
-            <div class="card">
-                <img src="../Img/Img/DOG!.webp" alt="Card Image" class="card-img">
-                <div class="card-content">
-                    <h3 class="card-title">Beagle</h3>
-                    <a href="dog.html"><button class="card-button">MEET ME</button></a>
+        <div class="card-container">
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Beagle.jpeg" alt="Beagle" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">BEAGLE</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>BEAGLE: Loyal, friendly, and great for families!</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="../Img/Img/Gemini_Generated_Image_79f0bf79f0bf79f0.jpeg" alt="Card Image" class="card-img">
-                <div class="card-content">
-                    <h3 class="card-title">CAT</h3>
-                    
-                    <button class="card-button">MEET ME</button>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Labrador Retriever.jpeg" alt="Labrador Retriever" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">LABRADOR RETRIEVER</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>LABRADOR: Intelligent, loving, and great companions!</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="../Img/Img/Gemini_Generated_Image_kr9hzakr9hzakr9h.jpeg" alt="Card Image" class="card-img">
-                <div class="card-content">
-                    <h3 class="card-title">PARROT</h3>
-                    
-                    <button class="card-button">MEET ME</button>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/pug.jpeg" alt="Pug" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">PUG</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>PUG: Adorable, loving, and full of personality!</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="../Img/Img/Gemini_Generated_Image_bo2yxlbo2yxlbo2y.jpeg" alt="Card Image" class="card-img">
-                <div class="card-content">
-                    <h3 class="card-title">RABBIT</h3>
-                    
-                    <button class="card-button">MEET ME</button>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Rajapalayam.jpeg" alt="Rajapalayam" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">RAJAPALAYAM</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>RAJAPALAYAM: Brave, loyal, and a great guardian!</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="../Img/Img/Gemini_Generated_Image_9ov8co9ov8co9ov8.jpeg" alt="Card Image" class="card-img">
-                <div class="card-content">
-                    <h3 class="card-title">TURTLE</h3>
-                   
-                    <button class="card-button">MEET ME</button>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Dalmatian.jpeg" alt="Dalmatian" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">DALMATIAN</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>DALMATIAN: Energetic, playful, and great for active families!</p>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="../Img/Img/Gemini_Generated_Image_q35lfq35lfq35lfq.jpeg" alt="Card Image" class="card-img">
-                <div class="card-content">
-                    <h3 class="card-title">HAMSTER</h3>
-                    
-                    <button class="card-button">MEET</button>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Doberman.jpeg" alt="Doberman" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">DOBERMAN</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>DOBERMAN: Intelligent, alert, and loyal companions!</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <footer class="footer">
         <p>&copy; 2023 FurFaimily. All rights reserved.</p>
     </footer>
+
+    <script>
+        function flipCard(card) {
+            card.classList.toggle('flipped');
+        }
+    </script>
 </body>
+</html>
