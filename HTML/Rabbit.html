@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FurFaimily</title>
+    <link rel="icon" href="../Img/Img/Gemini_Generated_Image_2vj2pb2vj2pb2vj2 (1).jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/Rabbit.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div class="nav-left">
+            <img src="../Img/Img/Gemini_Generated_Image_2vj2pb2vj2pb2vj2 (1).jpeg" alt="FurFaimily Logo" class="nav-logo">
+            <h1>FurFaimily</h1>
+        </div>
+        <div class="nav-right">
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#" onclick="showAbout()">About</a>
+                <a href="#">Contact</a>
+                <select id="user-type">
+                    <option value="" disabled selected>Select Role</option>
+                    <option value="donor">Donor</option>
+                    <option value="adopter">Adopter</option>
+                </select>
+                <button id="btn-logout">LOGOUT</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card-container">
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/American Fuzzy Lop.jpeg" alt="Fuzzy" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">AMERICAN FUZZY LOP</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>AMERICAN FUZZY LOP: Soft, cute, and a great companion!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Argente.webp" alt="Argente" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">ARGENTE</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>ARGENTE: Known for their silvery-gray coat, Argente rabbits are a popular breed for their gentle nature and easy grooming.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Blanc de Hotot.webp" alt="Blanc" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">BLANC DE HATOT</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>BLANC DE HOTOT: Known for their gentle nature and easy grooming, Blanc de Hotot rabbits make great companions!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/English Spot.jpeg" alt="English" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">ENGLISH SPOT</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>ENGLISH SPOT: Friendly, curious, and a great companion!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Dwarf Papillon.jpeg" alt="Dwarf" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">DWARF PAPILLON</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>DWARF PAPILLON: Friendly, curious, and a great companion!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" onclick="flipCard(this)">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="../Img/Img/Lionhead.jpeg" alt="Lionhead" class="card-img">
+                        <div class="card-content">
+                            <button class="card-button">LIONHEAD</button>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <p>LIONHEAD: Known for their distinctive mane of hair, Lionhead rabbits are friendly and make great pets!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 FurFaimily. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function flipCard(card) {
+            card.classList.toggle('flipped');
+        }
+    </script>
+</body>
+</html>
