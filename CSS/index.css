@@ -188,6 +188,19 @@
     width: 25%;
     margin: 0 5rem;
 }
+#btn-signin-signup {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#btn-signin-signup:hover {
+    background-color: var(--color-secondary);
+}
+
 
 /* -------------------------------------------------------footer---------------------------------------- */
 
