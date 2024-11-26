@@ -14,16 +14,10 @@
             <img src="../Img/Img/Gemini_Generated_Image_2vj2pb2vj2pb2vj2 (1).jpeg" alt="FurFaimily Logo" class="nav-logo">
             <h1>FurFaimily</h1>
         </div>
-        
+       
         <div class="nav-right">
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="#">Contact</a>
-                <select id="user-type">
-                    <option value="" disabled selected>Select Role</option>
-                    <option value="donor">Donor</option>
-                    <option value="adopter">Adopter</option>
-                </select>
                 <button id="btn-logout" onclick="logOut()">LOGOUT</button>
             </div>
         </div>
@@ -80,11 +74,11 @@
     </footer>
 
     <script>
+       
         function logOut() {
-            isSignedIn = false; // Reset sign-in status
-            localStorage.setItem('isSignedIn', 'false'); // Update local storage
-            document.getElementById('btn-signin-signup').innerText = 'SIGN IN / SIGN UP'; // Change button text back
-            window.location.href = 'index.html'; // Redirect to index page after logout
+            localStorage.setItem('isSignedIn', 'false');
+            
+            window.location.href = 'index.html';
         }
     </script>
 </body>

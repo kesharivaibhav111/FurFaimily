@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FurFaimily</title>
+    <title>FurFaimily - Hamsters</title>
     <link rel="icon" href="../Img/Img/Gemini_Generated_Image_2vj2pb2vj2pb2vj2 (1).jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/Hamster.css">
 </head>
@@ -16,14 +16,16 @@
         <div class="nav-right">
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="#" onclick="showAbout()">About</a>
-                <a href="#">Contact</a>
-                <select id="user-type">
+                <select id="user-type" onchange="navigateToPage(this.value)">
                     <option value="" disabled selected>Select Role</option>
-                    <option value="donor">Donor</option>
-                    <option value="adopter">Adopter</option>
+                    <option value="dog.html">Dog</option>
+                    <option value="cat.html">Cat</option>
+                    <option value="parrot.html">Parrot</option>
+                    <option value="hamster.html">Hamster</option>
+                    <option value="rabbit.html">Rabbit</option>
+                    <option value="turtle.html">Turtle</option>
                 </select>
-                <button id="btn-logout">LOGOUT</button>
+                <button id="btn-logout" onclick="logOut()">LOGOUT</button>
             </div>
         </div>
     </nav>
@@ -33,13 +35,13 @@
             <div class="card" onclick="flipCard(this)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="../Img/Img/Teddy Bear Hamster.jpeg" alt="Teddy" class="card-img">
+                        <img src="../Img/Img/Teddy Bear Hamster.jpeg" alt="Teddy Bear Hamster" class="card-img">
                         <div class="card-content">
-                            <button class="card-button">TEADY BEAR HAMSTER</button>
+                            <button class="card-button">TEDDY BEAR HAMSTER</button>
                         </div>
                     </div>
                     <div class="card-back">
-                        <p>TEDDY BEAR HAMSTER: Known for their distinctive red stripes on their heads, Teddy Bear Hamsters are a popular breed for their friendly nature and easy care.</p>
+                        <p>TEDDY BEAR HAMSTER: Known for their friendly nature and ease of care.</p>
                     </div>
                 </div>
             </div>
@@ -47,13 +49,13 @@
             <div class="card" onclick="flipCard(this)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="../Img/Img/Golden Hamster .jpeg" alt="Golden" class="card-img">
+                        <img src="../Img/Img/Golden Hamster .jpeg" alt="Golden Hamster" class="card-img">
                         <div class="card-content">
                             <button class="card-button">GOLDEN HAMSTER</button>
                         </div>
                     </div>
                     <div class="card-back">
-                        <p>GOLDEN HAMSTER: Golden Hamsters are known for their friendly and social nature. They are also nocturnal, which means they are most active during the night.</p>
+                        <p>GOLDEN HAMSTER: Social and nocturnal, perfect companions for night owls.</p>
                     </div>
                 </div>
             </div>
@@ -61,13 +63,13 @@
             <div class="card" onclick="flipCard(this)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="../Img/Img/Black Bear Hamster.jpeg" alt="Black" class="card-img">
+                        <img src="../Img/Img/Black Bear Hamster.jpeg" alt="Black Bear Hamster" class="card-img">
                         <div class="card-content">
                             <button class="card-button">BLACK BEAR HAMSTER</button>
                         </div>
                     </div>
                     <div class="card-back">
-                        <p>BLACK BEAR HAMSTER: Known for their distinctive black fur and friendly nature, Black Bear Hamsters are a popular choice for hamster enthusiasts.</p>
+                        <p>BLACK BEAR HAMSTER: Recognized for their distinctive black fur and friendliness.</p>
                     </div>
                 </div>
             </div>
@@ -75,13 +77,13 @@
             <div class="card" onclick="flipCard(this)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="../Img/Img/Angora Hamster .jpeg" alt="Angora" class="card-img">
+                        <img src="../Img/Img/Angora Hamster .jpeg" alt="Angora Hamster" class="card-img">
                         <div class="card-content">
                             <button class="card-button">ANGORA HAMSTER</button>
                         </div>
                     </div>
                     <div class="card-back">
-                        <p>ANGORA HAMSTER: With their soft, fluffy coats and friendly nature, Angora Hamsters are a popular choice for hamster enthusiasts.</p>
+                        <p>ANGORA HAMSTER: Soft, fluffy, and a great choice for hamster lovers.</p>
                     </div>
                 </div>
             </div>
@@ -89,13 +91,13 @@
             <div class="card" onclick="flipCard(this)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="../Img/Img/Panda Bear Hamster .jpeg" alt="Panda" class="card-img">
+                        <img src="../Img/Img/Panda Bear Hamster .jpeg" alt="Panda Bear Hamster" class="card-img">
                         <div class="card-content">
                             <button class="card-button">PANDA BEAR HAMSTER</button>
                         </div>
                     </div>
                     <div class="card-back">
-                        <p>PANDA BEAR HAMSTER: Panda Bear Hamsters are known for their distinctive black and white markings and friendly nature, making them a popular choice for hamster enthusiasts.</p>
+                        <p>PANDA BEAR HAMSTER: Famous for their black-and-white markings.</p>
                     </div>
                 </div>
             </div>
@@ -103,13 +105,13 @@
             <div class="card" onclick="flipCard(this)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="../Img/Img/Winter White Hamster .jpeg" alt="Winter" class="card-img">
+                        <img src="../Img/Img/Winter White Hamster .jpeg" alt="Winter White Hamster" class="card-img">
                         <div class="card-content">
                             <button class="card-button">WINTER WHITE HAMSTER</button>
                         </div>
                     </div>
                     <div class="card-back">
-                        <p>WINTER WHITE HAMSTER: With their thick, white coats and friendly demeanor, Winter White Hamsters are a popular choice for hamster enthusiasts.</p>
+                        <p>WINTER WHITE HAMSTER: Adorable and loved for their white coats.</p>
                     </div>
                 </div>
             </div>
@@ -117,12 +119,24 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2023 FurFaimily. All rights reserved.</p>
+        <p>&copy; 2024 FurFaimily. All rights reserved.</p>
     </footer>
 
     <script>
         function flipCard(card) {
             card.classList.toggle('flipped');
+        }
+
+        function logOut() {
+            localStorage.setItem('isSignedIn', 'false'); 
+            alert('You have been logged out.');
+            window.location.href = 'index.html'; 
+        }
+
+        function navigateToPage(page) {
+            if (page) {
+                window.location.href = page;
+            }
         }
     </script>
 </body>

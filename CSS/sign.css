@@ -1,11 +1,10 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to bottom, #424a8a, #81c784);
@@ -16,7 +15,6 @@ body {
     color: #333;
 }
 
-/* Container Styling */
 .container {
     background: #ffffff;
     width: 90%;
@@ -28,14 +26,12 @@ body {
     text-align: center;
 }
 
-/* Header */
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
     color: #424a8a;
 }
 
-/* Form Group Styling */
 .form-group {
     margin-bottom: 15px;
     text-align: left;
@@ -64,7 +60,6 @@ input:focus {
     box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
 }
 
-/* Button Styling */
 .btn {
     width: 100%;
     padding: 12px;
@@ -83,7 +78,6 @@ input:focus {
     background-color: #424a8a;
 }
 
-/* Link Styling */
 .link {
     margin-top: 15px;
     font-size: 14px;
@@ -100,7 +94,6 @@ input:focus {
     text-decoration: underline;
 }
 
-/* Animation */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -112,7 +105,6 @@ input:focus {
     }
 }
 
-/* Responsive Design */
 @media (max-width: 480px) {
     .container {
         padding: 20px 15px;

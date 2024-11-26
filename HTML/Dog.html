@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FurFaimily</title>
+    <title>FurFaimily - Dog Selection</title>
     <link rel="icon" href="../Img/Img/Gemini_Generated_Image_2vj2pb2vj2pb2vj2 (1).jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/Dog.css">
 </head>
@@ -16,14 +16,16 @@
         <div class="nav-right">
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="#" onclick="showAbout()">About</a>
-                <a href="#">Contact</a>
-                <select id="user-type">
+                <select id="user-type" onchange="navigateToPage(this.value)">
                     <option value="" disabled selected>Select Role</option>
-                    <option value="donor">Donor</option>
-                    <option value="adopter">Adopter</option>
+                    <option value="dog.html">Dog</option>
+                    <option value="cat.html">Cat</option>
+                    <option value="parrot.html">Parrot</option>
+                    <option value="hamster.html">Hamster</option>
+                    <option value="rabbit.html">Rabbit</option>
+                    <option value="turtle.html">Turtle</option>
                 </select>
-                <button id="btn-logout">LOGOUT</button>
+                <button id="btn-logout" onclick="logOut()">LOGOUT</button>
             </div>
         </div>
     </nav>
@@ -117,12 +119,24 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2023 FurFaimily. All rights reserved.</p>
+        <p>&copy; 2024 FurFaimily. All rights reserved.</p>
     </footer>
 
     <script>
         function flipCard(card) {
             card.classList.toggle('flipped');
+        }
+
+        function logOut() {
+            localStorage.setItem('isSignedIn', 'false'); 
+            alert('You have been logged out.');
+            window.location.href = 'index.html'; 
+        }
+
+        function navigateToPage(page) {
+            if (page) {
+                window.location.href = page; 
+            }
         }
     </script>
 </body>

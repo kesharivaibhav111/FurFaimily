@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FurFaimily</title>
+    <title>FurFaimily - Rabbits</title>
     <link rel="icon" href="../Img/Img/Gemini_Generated_Image_2vj2pb2vj2pb2vj2 (1).jpeg" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/Rabbit.css">
 </head>
@@ -16,14 +16,16 @@
         <div class="nav-right">
             <div class="nav-links">
                 <a href="index.html">Home</a>
-                <a href="#" onclick="showAbout()">About</a>
-                <a href="#">Contact</a>
-                <select id="user-type">
+                <select id="user-type" onchange="navigateToPage(this.value)">
                     <option value="" disabled selected>Select Role</option>
-                    <option value="donor">Donor</option>
-                    <option value="adopter">Adopter</option>
+                    <option value="dog.html">Dog</option>
+                    <option value="cat.html">Cat</option>
+                    <option value="parrot.html">Parrot</option>
+                    <option value="hamster.html">Hamster</option>
+                    <option value="rabbit.html">Rabbit</option>
+                    <option value="turtle.html">Turtle</option>
                 </select>
-                <button id="btn-logout">LOGOUT</button>
+                <button id="btn-logout" onclick="logOut()">LOGOUT</button>
             </div>
         </div>
     </nav>
@@ -33,13 +35,13 @@
             <div class="card" onclick="flipCard(this)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="../Img/Img/American Fuzzy Lop.jpeg" alt="Fuzzy" class="card-img">
+                        <img src="../Img/Img/American Fuzzy Lop.jpeg" alt="American Fuzzy Lop" class="card-img">
                         <div class="card-content">
                             <button class="card-button">AMERICAN FUZZY LOP</button>
                         </div>
                     </div>
                     <div class="card-back">
-                        <p>AMERICAN FUZZY LOP: Soft, cute, and a great companion!</p>
+                        <p>AMERICAN FUZZY LOP: Soft, adorable, and easy to handle!</p>
                     </div>
                 </div>
             </div>
@@ -53,7 +55,7 @@
                         </div>
                     </div>
                     <div class="card-back">
-                        <p>ARGENTE: Known for their silvery-gray coat, Argente rabbits are a popular breed for their gentle nature and easy grooming.</p>
+                        <p>ARGENTE: Known for their silvery coat and calm demeanor.</p>
                     </div>
                 </div>
             </div>
@@ -61,13 +63,13 @@
             <div class="card" onclick="flipCard(this)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="../Img/Img/Balanc de Hotot.jpeg" alt="Blanc" class="card-img">
+                        <img src="../Img/Img/Balanc de Hotot.jpeg" alt="Blanc de Hotot" class="card-img">
                         <div class="card-content">
-                            <button class="card-button">BLANC DE HATOT</button>
+                            <button class="card-button">BLANC DE HOTOT</button>
                         </div>
                     </div>
                     <div class="card-back">
-                        <p>BLANC DE HOTOT: Known for their gentle nature and easy grooming, Blanc de Hotot rabbits make great companions!</p>
+                        <p>BLANC DE HOTOT: Gentle and known for their stunning eye markings.</p>
                     </div>
                 </div>
             </div>
@@ -75,13 +77,13 @@
             <div class="card" onclick="flipCard(this)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="../Img/Img/English Spot.jpeg" alt="English" class="card-img">
+                        <img src="../Img/Img/English Spot.jpeg" alt="English Spot" class="card-img">
                         <div class="card-content">
                             <button class="card-button">ENGLISH SPOT</button>
                         </div>
                     </div>
                     <div class="card-back">
-                        <p>ENGLISH SPOT: Friendly, curious, and a great companion!</p>
+                        <p>ENGLISH SPOT: Energetic and adored for their unique spot patterns!</p>
                     </div>
                 </div>
             </div>
@@ -89,13 +91,13 @@
             <div class="card" onclick="flipCard(this)">
                 <div class="card-inner">
                     <div class="card-front">
-                        <img src="../Img/Img/Dwarf Papillon.jpeg" alt="Dwarf" class="card-img">
+                        <img src="../Img/Img/Dwarf Papillon.jpeg" alt="Dwarf Papillon" class="card-img">
                         <div class="card-content">
                             <button class="card-button">DWARF PAPILLON</button>
                         </div>
                     </div>
                     <div class="card-back">
-                        <p>DWARF PAPILLON: Friendly, curious, and a great companion!</p>
+                        <p>DWARF PAPILLON: Small, playful, and full of personality!</p>
                     </div>
                 </div>
             </div>
@@ -109,7 +111,7 @@
                         </div>
                     </div>
                     <div class="card-back">
-                        <p>LIONHEAD: Known for their distinctive mane of hair, Lionhead rabbits are friendly and make great pets!</p>
+                        <p>LIONHEAD: Distinctive mane and affectionate personality!</p>
                     </div>
                 </div>
             </div>
@@ -117,12 +119,24 @@
     </div>
 
     <footer class="footer">
-        <p>&copy; 2023 FurFaimily. All rights reserved.</p>
+        <p>&copy; 2024 FurFaimily. All rights reserved.</p>
     </footer>
 
     <script>
         function flipCard(card) {
             card.classList.toggle('flipped');
+        }
+
+        function logOut() {
+            localStorage.setItem('isSignedIn', 'false');
+            alert('You have been logged out.');
+            window.location.href = 'index.html'; 
+        }
+
+        function navigateToPage(page) {
+            if (page) {
+                window.location.href = page; 
+            }
         }
     </script>
 </body>

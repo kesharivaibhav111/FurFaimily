@@ -82,7 +82,7 @@
     <script>
         let isSignedIn = false;
 
-        // Check sign-in status on page load
+
         window.onload = function() {
             if (localStorage.getItem('isSignedIn') === 'true') {
                 isSignedIn = true;
@@ -92,16 +92,16 @@
 
         function handleGetStarted() {
             if (!isSignedIn) {
-                alert('Please sign in first!'); // Notify user to sign in
+                alert('Please sign in first!'); 
             } else {
-                window.location.href = 'select.html'; // Redirect to select.html
+                window.location.href = 'select.html'; 
             }
         }
 
         function handleSignIn() {
             if (!isSignedIn) {
-                window.location.href = 'sign.html'; // Redirect to sign-in page
-                localStorage.setItem('isSignedIn', 'true'); // Simulate sign-in process
+                window.location.href = 'sign.html'; 
+                localStorage.setItem('isSignedIn', 'true'); 
             } else {
                 logOut();
             }

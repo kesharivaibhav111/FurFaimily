@@ -11,7 +11,6 @@
     font-family: sans-serif;
 }
 
-/* -------------------------------------------------------navbar-------------------------------------------------- */
 .nav-bar {
     width: 100vw;
     height: 4rem;
@@ -106,7 +105,6 @@
     background-color: var(--color-secondary);
 }
 
-/* -------------------------------------------------------------------main-------------------------------------------------- */
 
 .main {
     display: flex;
@@ -145,7 +143,6 @@
     margin-top: 4rem;
 }
 
-/* ----------------------------------------------contact email-------------------------------------- */
 
 .contact-email {
     width: 80%;
@@ -202,7 +199,6 @@
 }
 
 
-/* -------------------------------------------------------footer---------------------------------------- */
 
 .footer1 {
     background-color: #f8f9fa; 
@@ -213,7 +209,6 @@
     border-top: 2px solid #e9ecef;
 }
 
-/* Horizontal Line */
 .footer hr {
     border: none;
     border-top: 1px solid #dee2e6;
@@ -275,7 +270,7 @@
     }
 }
 
-/* -------------------------------------------------------about-section---------------------------------------- */
+
 #about-section {
     background-color: var(--color-primary-light);
     color: var(--color-black);
