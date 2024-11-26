@@ -14,7 +14,7 @@
             <img src="../Img/Img/Gemini_Generated_Image_2vj2pb2vj2pb2vj2 (1).jpeg" alt="FurFaimily Logo" class="nav-logo">
             <h1>FurFaimily</h1>
         </div>
-         
+        
         <div class="nav-right">
             <div class="nav-links">
                 <a href="index.html">Home</a>
@@ -24,66 +24,68 @@
                     <option value="donor">Donor</option>
                     <option value="adopter">Adopter</option>
                 </select>
-                <button id="btn-logout">LOGOUT</button>
+                <button id="btn-logout" onclick="logOut()">LOGOUT</button>
             </div>
         </div>
     </nav>
-<div class="container">
-    <div class="card-container" style="display: flex; justify-content: space-around;">
-        <div class="card">
-            <img src="../Img/Img/Gemini_Generated_Image_xqfjilxqfjilxqfj.jpeg" alt="Card Image" class="card-img">
-            <div class="card-content">
-                <h3 class="card-title">DOG</h3>
-                <a href="dog.html"><button class="card-button">MEET ME</button></a>
+    <div class="container">
+        <div class="card-container" style="display: flex; justify-content: space-around;">
+            <div class="card">
+                <img src="../Img/Img/Gemini_Generated_Image_xqfjilxqfjilxqfj.jpeg" alt="Card Image" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">DOG</h3>
+                    <a href="dog.html"><button class="card-button">MEET ME</button></a>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="../Img/Img/Gemini_Generated_Image_79f0bf79f0bf79f0.jpeg" alt="Card Image" class="card-img">
-            <div class="card-content">
-                <h3 class="card-title">CAT</h3>
-              
-                <a href="cat.html"><button class="card-button">MEET ME</button></a>
+            <div class="card">
+                <img src="../Img/Img/Gemini_Generated_Image_79f0bf79f0bf79f0.jpeg" alt="Card Image" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">CAT</h3>
+                    <a href="cat.html"><button class="card-button">MEET ME</button></a>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="../Img/Img/Gemini_Generated_Image_kr9hzakr9hzakr9h.jpeg" alt="Card Image" class="card-img">
-            <div class="card-content">
-                <h3 class="card-title">PARROT</h3>
-               
-                <a href="Parrot.html"><button class="card-button">MEET ME</button></a>
+            <div class="card">
+                <img src="../Img/Img/Gemini_Generated_Image_kr9hzakr9hzakr9h.jpeg" alt="Card Image" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">PARROT</h3>
+                    <a href="Parrot.html"><button class="card-button">MEET ME</button></a>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="../Img/Img/Gemini_Generated_Image_bo2yxlbo2yxlbo2y.jpeg" alt="Card Image" class="card-img">
-            <div class="card-content">
-                <h3 class="card-title">RABBIT</h3>
-                
-                <a href="Rabbit.html"><button class="card-button">MEET ME</button></a>
+            <div class="card">
+                <img src="../Img/Img/Gemini_Generated_Image_bo2yxlbo2yxlbo2y.jpeg" alt="Card Image" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">RABBIT</h3>
+                    <a href="Rabbit.html"><button class="card-button">MEET ME</button></a>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="../Img/Img/Gemini_Generated_Image_9ov8co9ov8co9ov8.jpeg" alt="Card Image" class="card-img">
-            <div class="card-content">
-                <h3 class="card-title">TURTLE</h3>
-               
-                <a href="Turtle.html"><button class="card-button">MEET ME</button></a>
-
+            <div class="card">
+                <img src="../Img/Img/Gemini_Generated_Image_9ov8co9ov8co9ov8.jpeg" alt="Card Image" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">TURTLE</h3>
+                    <a href="Turtle.html"><button class="card-button">MEET ME</button></a>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <img src="../Img/Img/Gemini_Generated_Image_q35lfq35lfq35lfq.jpeg" alt="Card Image" class="card-img">
-            <div class="card-content">
-                <h3 class="card-title">HAMSTER</h3>
-               
-                <a href="Hamster.html"><button class="card-button">MEET ME</button></a>
+            <div class="card">
+                <img src="../Img/Img/Gemini_Generated_Image_q35lfq35lfq35lfq.jpeg" alt="Card Image" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">HAMSTER</h3>
+                    <a href="Hamster.html"><button class="card-button">MEET ME</button></a>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<footer class="footer">
-    <p>&copy; 2023 FurFaimily. All rights reserved.</p>
-</footer>
+    <footer class="footer">
+        <p>&copy; 2023 FurFaimily. All rights reserved.</p>
+    </footer>
 
+    <script>
+        function logOut() {
+            isSignedIn = false; // Reset sign-in status
+            localStorage.setItem('isSignedIn', 'false'); // Update local storage
+            document.getElementById('btn-signin-signup').innerText = 'SIGN IN / SIGN UP'; // Change button text back
+            window.location.href = 'index.html'; // Redirect to index page after logout
+        }
+    </script>
 </body>
 </html>

@@ -19,7 +19,7 @@
                 <a href="#">Home</a>
                 <a href="#" onclick="showAbout()">About</a>
                 <a href="#">Contact</a>
-                <button id="btn-signin-signup" onclick="window.location.href='sign.html'">SIGN IN / SIGN UP</button>
+                <button id="btn-signin-signup" onclick="handleSignIn()">SIGN IN / SIGN UP</button>
             </div>
         </div>
     </nav>
@@ -28,7 +28,7 @@
             <h1>Bring Joy Home  Adopt, Love, Transform Lives!</h1>
             <span>Discover the unmatched joy of adopting a furry companion. Give homeless pets a second chance and transform their lives while enriching your own</span>
             <div class="button-container"> 
-                <button id="btn-getstarted" onclick="checkSignIn()">Get Started</button>
+                <button id="btn-getstarted" onclick="handleGetStarted()">Get Started</button>
             </div>      
         </div>
         <div class="main-img">
@@ -80,14 +80,51 @@
         </div>
     </div>
     <script>
+        let isSignedIn = false;
+
+        // Check sign-in status on page load
+        window.onload = function() {
+            if (localStorage.getItem('isSignedIn') === 'true') {
+                isSignedIn = true;
+                updateUIAfterSignIn();
+            }
+        };
+
+        function handleGetStarted() {
+            if (!isSignedIn) {
+                alert('Please sign in first!'); // Notify user to sign in
+            } else {
+                window.location.href = 'select.html'; // Redirect to select.html
+            }
+        }
+
+        function handleSignIn() {
+            if (!isSignedIn) {
+                window.location.href = 'sign.html'; // Redirect to sign-in page
+                localStorage.setItem('isSignedIn', 'true'); // Simulate sign-in process
+            } else {
+                logOut();
+            }
+        }
+
+        function logOut() {
+            isSignedIn = false;
+            localStorage.setItem('isSignedIn', 'false');
+            document.getElementById('btn-signin-signup').innerText = 'SIGN IN / SIGN UP';
+            alert('You have logged out.');
+        }
+
+        function updateUIAfterSignIn() {
+            document.getElementById('btn-signin-signup').innerText = 'LOG OUT';
+        }
+
         function showAbout() {
             document.getElementById('about-section').style.display = 'block';
         }
-    
+        
         function hideAbout() {
             document.getElementById('about-section').style.display = 'none';
         }
     </script>
-    
 </body>
 </html>
