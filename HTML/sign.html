@@ -70,9 +70,7 @@
             const email = document.getElementById('email').value;
             const password = document.getElementById('password').value;
 
-            // Check if credentials exist in local storage (simulating a database)
             if (localStorage.getItem(email) === password) {
-                // Redirect to select.html on successful sign-in
                 window.location.href = 'index.html';
             } else {
                 alert('Invalid credentials. Please sign up.');
@@ -84,10 +82,9 @@
             const signupEmail = document.getElementById('signup-email').value;
             const signupPassword = document.getElementById('signup-password').value;
 
-            // Save the new user credentials in local storage (simulating a database)
             localStorage.setItem(signupEmail, signupPassword);
             alert('Sign up successful! You can now sign in.');
-            toggleForm(); // Switch to sign-in form
+            toggleForm();
         });
     </script>
 </body>
