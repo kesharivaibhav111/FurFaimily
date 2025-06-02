@@ -18,7 +18,7 @@
             <div class="nav-links">
                 <a href="#">Home</a>
                 <a href="#" onclick="showAbout()">About</a>
-                <a href="#">Contact</a>
+                <a href="#" onclick="showContact()">Contact</a>
                 <button id="btn-signin-signup" onclick="handleSignIn()">SIGN IN / SIGN UP</button>
             </div>
         </div>
@@ -82,6 +82,10 @@
     <script>
         let isSignedIn = false;
 
+        function showContact() {
+            const contactSection = document.querySelector('.contact-email');
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
 
         window.onload = function() {
             if (localStorage.getItem('isSignedIn') === 'true') {
@@ -106,7 +110,7 @@
                 logOut();
             }
         }
-
+        
         function logOut() {
             isSignedIn = false;
             localStorage.setItem('isSignedIn', 'false');
